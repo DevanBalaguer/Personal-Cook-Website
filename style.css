@@ -6,6 +6,7 @@
 
 *{
     margin: 0;
+    padding:0;
 }
 
 html{
@@ -61,7 +62,6 @@ main{
     list-style-type: none;    
     
 }
-
 
 h1, h2, p {
     color: white;
@@ -431,6 +431,9 @@ footer a:hover{
 #bio p {
     text-align: justify;
     font-size: 1.2em;
+    padding-left:1em;
+    padding-right: 1em;
+    padding-top: 1em;
   }
 
 .box2 {
@@ -438,6 +441,8 @@ footer a:hover{
     height: 175px;  
     margin: 5px;
     float: right;
+    padding-left:1em;
+    padding-right: 1em;
 }
 .price-boxes {
     text-align: center;
@@ -458,22 +463,23 @@ footer a:hover{
 }  
 #contact {
     margin-top: 40px;
-    background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 10em;
-    height: 15rem;
-    text-align: center;
+    background: black;
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width:80vw;
     color: white;
     box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+   
 }  
 .info{
     display: flex;
-    flex-flow: column wrap;
-    justify-self: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 80vw;
 }
 .info h2 {
     padding-top: 25px;
@@ -484,31 +490,22 @@ form h2{
     font-size: 2rem;
 }
 textarea{
-    width: 14em;
+    width: 10em;
 } 
 
 .contactForm h2 {
     font-weight: 200;
 }
  .contactForm{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 80vw;
  } 
-  
-.inputFields {
-    margin: 15px 0;
-    font-size: 1rem;
-    width: 100%;
-    border: 1px solid rgba(10, 180, 180, 1);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background: rgba(20, 20, 20, .2);
-    color: white;
-    outline: none;
-}
 
 #contact-btn:hover {
-      padding: 10px 40px;
+    padding: 10px 40px;
 }   
 }
 
@@ -558,13 +555,10 @@ textarea{
 }  
 #contact {
     margin-top: 40px;
-    background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 35rem;
-    height: 40rem;
-    text-align: center;
+    background: black;
     display: flex;
+    text-align: center;
+    justify-content: center;
     color: white;
     box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
 }  
