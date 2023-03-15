@@ -13,17 +13,11 @@ html{
     font-size: 16px;
     font-family: var(--content);
     background-image: radial-gradient(circle, rgba(0,0,0,.65) 0%, rgba(0,0,0,1) 100%), url(https://i.pinimg.com/564x/62/e9/09/62e909660662602ce55c7469e7d85057.jpg);
-    background-repeat:repeat-y;
-    background-position: center center;
+    background-repeat: repeat-y;
+    background-position: center;
     background-size: cover;
     height: 100%;
     width: 100%;
-}
-
-
-main{
-    max-width: 800px;
-    margin: auto;
 }
 
 .navbar {
@@ -40,7 +34,7 @@ main{
     height: 8em;
     width: 8em;
     border-radius: 50%;
-    padding-left: 1em;
+    padding-left:2em;
     padding-top: 1em;
 }
 
@@ -48,7 +42,7 @@ main{
     text-decoration:none;
     color: white;
     list-style-type: none;
-    padding-right: 1em;
+    padding-right: 2em;
     font-size: 1.2em;
     transition: .2s;
 }
@@ -61,6 +55,12 @@ main{
     display: flex;
     list-style-type: none;    
     
+}
+
+main { 
+	max-width: 1080px; 
+	margin: 0 auto !important; 
+	float: none !important; 
 }
 
 h1, h2, p {
@@ -139,7 +139,7 @@ h2{
 
 #bio {
     text-align: center;
-    padding-top: 20rem;
+    padding-top: 10em;
    
 }
 
@@ -170,7 +170,7 @@ h2{
 
 #pricing {
     text-align: center;
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-bottom: 15rem;
 }
 
@@ -284,11 +284,12 @@ li i {
 }
 
 #contact {
-    margin-top: 40px;
+    margin-left: 6.9em;
+    margin-top: 2.5em;
     background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
     background-repeat: no-repeat;
     position: absolute;
-    width: 800px;
+    max-width: 1080px;
     height: 600px;
     text-align: center;
     display: flex;
@@ -406,7 +407,7 @@ footer a:hover{
     color:#d9fdfe;
 }
 
-
+/*Responsive Design*/
 
 @media only screen and (max-width:400px)  {
     html{
@@ -456,24 +457,20 @@ footer a:hover{
 .lawful-good, .neutral, .chaotic-evil{
     height: 300px;
     width: 230px;
-    background-color: white;
-    border: .25em solid #79ced1;
-    padding-right:10px;
-    padding-left: 10px;
-}  
+} 
+
 #contact {
-    margin-top: 40px;
     background: black;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width:80vw;
+    width: 400px;
     color: white;
-    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
-   
-}  
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5); 
+} 
+
 .info{
     display: flex;
     align-items: center;
@@ -481,14 +478,17 @@ footer a:hover{
     flex-flow: column wrap;
     width: 80vw;
 }
+
 .info h2 {
     padding-top: 25px;
     font-weight: 200;
     font-size: 1.5rem;
 }
+
 form h2{
     font-size: 2rem;
 }
+
 textarea{
     width: 10em;
 } 
@@ -496,6 +496,7 @@ textarea{
 .contactForm h2 {
     font-weight: 200;
 }
+
  .contactForm{
     display: flex;
     align-items: center;
@@ -510,25 +511,29 @@ textarea{
 }
 
 @media only screen and (min-width: 401px) and (max-width:600px)  {
-    html{
-        font-size: 14px;
-    }
+    
+html{
+    font-size: 14px;
+}
 
-    .navbar{
-        flex-direction: column;
-    }
-    .square img {
+.navbar{
+    flex-direction: column;
+}
+
+.square img {
     height: 200px;
     width: 200px;
-  }
+}
+
 #bio{
     padding-left: 15px;
     padding-right: 15px;
 }
+
 #bio p {
     text-align: justify;
     font-size: 1em;
-  }
+}
 
 .box2 {
     width: 175px;
@@ -536,6 +541,7 @@ textarea{
     margin: 5px;
     float: right;
 }
+
 .price-boxes {
     text-align: center;
     display: flex;
@@ -553,6 +559,7 @@ textarea{
     padding-right:10px;
     padding-left: 10px;
 }  
+
 #contact {
     margin-top: 40px;
     background: black;
@@ -562,11 +569,13 @@ textarea{
     color: white;
     box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
 }  
+
 .info h2 {
     padding-top: 30px;
     font-weight: 200;
     font-size: 2.75rem;
 }
+
 textarea{
     width: 16em;
 }
